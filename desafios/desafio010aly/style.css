@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'fonte1' ;
+    src: url('fontes/idroid.otf') format('Opentype');
+}
+
+body {
+    background-color: #84e1ad;
+}
+
+header {
+    background-image: linear-gradient(180deg, #45fb97, #14502f);
+    padding: 25px;
+    color: white;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+}
+
+header > p {
+    text-align: center;
+    font-family: 'Roboto';
+    color: rgba(255, 255, 255, 0.7);
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+    font-family: 'Roboto';
+}
+
+main {
+    text-align: center;
+    background-color: #ffffffd8;
+    padding: 50px 100px 50px 100px;
+    margin: 0px 200px ;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 100%;
+    font-weight: 500;
+}
+
+main > picture {
+    padding: 25px 0px 25px 0px
+}
+
+main > h1 {
+    font-family: 'fonte1';
+    color: #035829;
+}
+
+main > h2 {
+    
+    background-image: linear-gradient(90deg, #45fb9771, #ffffff42);
+    font-family: 'fonte1';
+    text-align: left;
+    color: #035829;
+}
+
+p > a {
+    color: #025522;
+    text-decoration: none;
+}
+
+main > picture#terceira {
+    padding: 0px 220px;
+}
+
+p#video {
+    background-color: #035829;
+    padding: 50px 100px 50px 100px;
+    margin: 0px 200px ;
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    text-indent: 20px;
+    background-color: #ffffffd8;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 200px ;
+}
+
+section {
+    background-color: #C5EBD6;
+    padding: 50px 100px 50px 100px;
+    border-radius: 10px;
+    
+}
+
+section > h1 {
+    background-color: #2FA866;
+    padding: 8px 8px 8px 8px;
+    margin: -49px -99px 0px;
+    border-radius: 10px 10px 0px 0px;
+    color: #ffffff;
+}
+
+section > p {
+    margin: 20px -94px 20px -94px;
+    text-indent: 30px;
+}
