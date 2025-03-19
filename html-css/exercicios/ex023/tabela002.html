@@ -8,16 +8,37 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+        thead {
+            background-color: gray;
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        th.populacao {
+            width: 50px;
+        }
+
         td.numero {
             text-align: right;
         }
@@ -26,31 +47,69 @@
 <body>
     <h1>Uso de Tabela Grande</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" class="populacao">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td>Pernambuco O MELHOR</td>
+                <td class="numero">9.539.029</td>
+            </tr>
+            <tr>
                 <td>São Paulo</td>
-                <td>40 522 023</td>
+                <td class="numero">40.522.023</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 422 896</td>
+                <td class="numero">21.422.896</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>21 325 665</td>
+                <td class="numero">21.325.665</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">...</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">...</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">...</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">...</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">...</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">...</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">...</td>
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
-            <td class="numero"><strong>00000</strong></td>
-            
+            <th scope="row">Total de Habitantes</th>
+            <td class="numero"><strong>92.809.613</strong></td> 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nostrum. Cupiditate laboriosam quam repellat optio, eligendi officiis vel numquam impedit explicabo, itaque distinctio, molestiae provident non nostrum perspiciatis sint minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores explicabo, facilis amet excepturi sed a delectus magnam atque enim minima consequatur. Minus recusandae hic cupiditate id? Dolorum, ex fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro debitis quia quibusdam mollitia dolorum, optio consequuntur magni modi. Nesciunt delectus molestias eveniet pariatur asperiores blanditiis ipsum, doloribus voluptas fugiat ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet quod obcaecati repellat suscipit commodi? Eos, deleniti molestias doloribus natus repudiandae impedit tempora ut neque nihil obcaecati quas provident reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a delectus rem aspernatur, quaerat tenetur vero tempora! Quos alias temporibus veniam, nemo adipisci totam in ipsa nihil voluptas accusantium a.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nostrum. Cupiditate laboriosam quam repellat optio, eligendi officiis vel numquam impedit explicabo, itaque distinctio, molestiae provident non nostrum perspiciatis sint minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores explicabo, facilis amet excepturi sed a delectus magnam atque enim minima consequatur. Minus recusandae hic cupiditate id? Dolorum, ex fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro debitis quia quibusdam mollitia dolorum, optio consequuntur magni modi. Nesciunt delectus molestias eveniet pariatur asperiores blanditiis ipsum, doloribus voluptas fugiat ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet quod obcaecati repellat suscipit commodi? Eos, deleniti molestias doloribus natus repudiandae impedit tempora ut neque nihil obcaecati quas provident reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a delectus rem aspernatur, quaerat tenetur vero tempora! Quos alias temporibus veniam, nemo adipisci totam in ipsa nihil voluptas accusantium a.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nostrum. Cupiditate laboriosam quam repellat optio, eligendi officiis vel numquam impedit explicabo, itaque distinctio, molestiae provident non nostrum perspiciatis sint minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores explicabo, facilis amet excepturi sed a delectus magnam atque enim minima consequatur. Minus recusandae hic cupiditate id? Dolorum, ex fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro debitis quia quibusdam mollitia dolorum, optio consequuntur magni modi. Nesciunt delectus molestias eveniet pariatur asperiores blanditiis ipsum, doloribus voluptas fugiat ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet quod obcaecati repellat suscipit commodi? Eos, deleniti molestias doloribus natus repudiandae impedit tempora ut neque nihil obcaecati quas provident reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a delectus rem aspernatur, quaerat tenetur vero tempora! Quos alias temporibus veniam, nemo adipisci totam in ipsa nihil voluptas accusantium a.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nostrum. Cupiditate laboriosam quam repellat optio, eligendi officiis vel numquam impedit explicabo, itaque distinctio, molestiae provident non nostrum perspiciatis sint minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores explicabo, facilis amet excepturi sed a delectus magnam atque enim minima consequatur. Minus recusandae hic cupiditate id? Dolorum, ex fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro debitis quia quibusdam mollitia dolorum, optio consequuntur magni modi. Nesciunt delectus molestias eveniet pariatur asperiores blanditiis ipsum, doloribus voluptas fugiat ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet quod obcaecati repellat suscipit commodi? Eos, deleniti molestias doloribus natus repudiandae impedit tempora ut neque nihil obcaecati quas provident reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a delectus rem aspernatur, quaerat tenetur vero tempora! Quos alias temporibus veniam, nemo adipisci totam in ipsa nihil voluptas accusantium a.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nostrum. Cupiditate laboriosam quam repellat optio, eligendi officiis vel numquam impedit explicabo, itaque distinctio, molestiae provident non nostrum perspiciatis sint minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores explicabo, facilis amet excepturi sed a delectus magnam atque enim minima consequatur. Minus recusandae hic cupiditate id? Dolorum, ex fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro debitis quia quibusdam mollitia dolorum, optio consequuntur magni modi. Nesciunt delectus molestias eveniet pariatur asperiores blanditiis ipsum, doloribus voluptas fugiat ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet quod obcaecati repellat suscipit commodi? Eos, deleniti molestias doloribus natus repudiandae impedit tempora ut neque nihil obcaecati quas provident reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a delectus rem aspernatur, quaerat tenetur vero tempora! Quos alias temporibus veniam, nemo adipisci totam in ipsa nihil voluptas accusantium a.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nostrum. Cupiditate laboriosam quam repellat optio, eligendi officiis vel numquam impedit explicabo, itaque distinctio, molestiae provident non nostrum perspiciatis sint minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores explicabo, facilis amet excepturi sed a delectus magnam atque enim minima consequatur. Minus recusandae hic cupiditate id? Dolorum, ex fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro debitis quia quibusdam mollitia dolorum, optio consequuntur magni modi. Nesciunt delectus molestias eveniet pariatur asperiores blanditiis ipsum, doloribus voluptas fugiat ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet quod obcaecati repellat suscipit commodi? Eos, deleniti molestias doloribus natus repudiandae impedit tempora ut neque nihil obcaecati quas provident reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a delectus rem aspernatur, quaerat tenetur vero tempora! Quos alias temporibus veniam, nemo adipisci totam in ipsa nihil voluptas accusantium a.</p>
 </body>
 </html>
