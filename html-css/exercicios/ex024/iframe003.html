@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#especial {
+            width: 95vw;
+            height: 300px;
+            border: 1px solid black;
+            display: block;
+            margin: auto; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur facere tenetur doloribus at eos eaque, hic sapiente error possimus exercitationem quos impedit, illo ipsam mollitia, in officiis voluptatem quaerat quis?</p>
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ea et molestiae, omnis debitis illo dicta distinctio, quidem commodi ad blanditiis provident ipsam minus, quisquam adipisci. Quod aperiam ex eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quis cum quisquam sapiente. Tenetur, soluta dolore minima ut ex et quia neque perspiciatis rerum iste, praesentium dolores illum exercitationem inventore.</p>
+
+    <iframe id="especial" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima error consequatur deserunt sequi voluptates non odit quidem delectus quos ipsa fugit, laboriosam voluptate similique ipsam distinctio? Explicabo cumque est exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima error consequatur deserunt sequi voluptates non odit quidem delectus quos ipsa fugit, laboriosam voluptate similique ipsam distinctio? Explicabo cumque est exercitationem.</p> <img src='imagens/foto-perfil-guanabara.png'>Foto do guanabara</img>">Infelizmente seu navegador não é compatível com iframes</iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima error consequatur deserunt sequi voluptates non odit quidem delectus quos ipsa fugit, laboriosam voluptate similique ipsam distinctio? Explicabo cumque est exercitationem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptas, est sed id tempore dignissimos illo distinctio eveniet perspiciatis recusandae numquam voluptate obcaecati veritatis ipsum labore ratione natus voluptatem. Aut.</p>
+
+</body>
+</html>
