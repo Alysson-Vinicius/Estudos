@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /*CSS com características somente para Retrato (portrait)*/
+
+body {
+    background: url("../imagens/cev-portrait.jpg") center bottom no-repeat;
+    background-size: cover;
+   
+}
