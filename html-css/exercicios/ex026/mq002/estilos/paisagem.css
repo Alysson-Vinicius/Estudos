@@ -3,6 +3,6 @@
 /*CSS com características somente para Paisagem (landscape)*/
 
 body {
-    background: url("../imagens/cev-landscape.jpg") left bottom no-repeat;
+    background: url("../imagens/cev-landscape.jpg") center bottom no-repeat;
     background-size: cover;
 }
